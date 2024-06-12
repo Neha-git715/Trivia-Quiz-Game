@@ -1,0 +1,133 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url(bg.jpg);
+    /* background-position: center; */
+    background-size: contain;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+.nav{
+display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 80px;
+ /* background-color:mediumvioletred; */
+ margin: 0px;
+ padding: 0px;
+ background-attachment: fixed;
+}
+.navbar{
+ font-size: 7vh;
+ color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 7vh;
+    }
+#triviaimg{
+width: 400px;
+padding:7vh 0vh 2vh 0vh;
+}
+
+#start{
+    margin: 15px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+#start:hover{
+    color:purple;
+    background-color:pink;
+}
+@keyframes FadeIn{
+    from {opacity: 0;}
+    to{ opacity:1;}
+}
+.FadeIn{
+    animation:FadeIn 1s ease-in-out;
+}
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+.slide-in {
+    animation: slideIn 1s ease-in-out;
+}
+
+/* ******************************************************************************************************************************** */
+#quiz-container {
+    /* background: #fff; */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 100px 600px 20px 600px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 8px; 
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.btn {
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.hide {
+    display: none;
+}
+
+.correct {
+    background: #28a745;
+}
+
+.incorrect {
+    background: #dc3545;
+}
+#next-button{
+    margin: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#score-container{
+    padding: 20px;
+}
+#thank-you-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    text-align: center;
+    padding-right: 40px;
+}

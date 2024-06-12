@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Quiz Game</title>
+    <link rel="stylesheet" href="proj1.css">
+</head>
+<body>
+    <header class="nav">
+        <nav class="navbar">
+            Trivia Quiz Game
+        </nav>
+    </header>
+
+    <div class="container"> 
+        <img id="triviaimg" src="triviaimg.jpeg" alt="triviaimg" class="FadeIn">
+        <h4 class="slide-in">Welcome to the Game</h4>
+         <button id="start" class="FadeIn">START QUIZ</button>
+    </div>
+
+    <div id="quiz-container" class="hide">
+        <div id="question-container">
+            <h2 id="question">Question Text</h2>
+            <div id="answer-buttons" class="btn-container">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <button id="next-button" class="btn hide">Next</button>
+        <div id="score-container" class="hide">
+            <h2>Your Score: <span id="score">0</span></h2>
+        </div>
+    </div>
+    <div id="thank-you-container" class="hide">
+        <h2>Thank you for playing!</h2>
+    </div>
+    <script src="proj1.js"></script>
+</body>
+</html>
