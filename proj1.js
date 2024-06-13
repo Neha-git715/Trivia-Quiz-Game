@@ -54,7 +54,7 @@ const answerButtonsElement = document.getElementById('answer-buttons');
 const nextButton = document.getElementById('next-button');
 const scoreContainer = document.getElementById('score-container');
 const scoreElement = document.getElementById('score');
-const thankYouContainer = document.getElementById('thank-you-container');
+// const thankYouContainer = document.getElementById('thank-you-container');
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -104,7 +104,7 @@ function selectAnswer(answer) {
         nextButton.classList.remove('hide');
     } else {
         showScore();
-        thankYouContainer.classList.remove('hide');
+        // thankYouContainer.classList.remove('hide');
     }
 }
 
